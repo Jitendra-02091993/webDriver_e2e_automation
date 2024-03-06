@@ -25,12 +25,16 @@
   },
   "homepage": "https://github.com/Jitendra-02091993/webDriver_IO_e2e_automation#readme",
   "devDependencies": {
+    "@types/chai": "^4.3.12",
     "@wdio/allure-reporter": "^8.32.4",
     "@wdio/cli": "^8.32.4",
     "@wdio/cucumber-framework": "^8.32.4",
     "@wdio/local-runner": "^8.32.4",
     "@wdio/spec-reporter": "^8.32.4",
+    "chai": "^5.1.0",
+    "chromedriver": "^122.0.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "wdio-chromedriver-service": "^8.1.1"
   }
 }
