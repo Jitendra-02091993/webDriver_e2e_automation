@@ -18,3 +18,15 @@ Feature: Demo feature
   Scenario: Handle dropDown
     When User clicks on dropDown link text
     Then verify user lands on dropDown List page
+    Then user click on drop down and fetch all options
+
+  @TC_004
+  Scenario: Handle checkbox
+    When User clicks on checkbox link text
+    Then verify user lands on checkbox page
+    Then User unselect an options if selected
+
+  @TC_005
+  Scenario: Handle Window
+    When User clicks on multiple Windows link text
+    When open another new Window on multiple Windows homepage and assert its title and switch back to main window

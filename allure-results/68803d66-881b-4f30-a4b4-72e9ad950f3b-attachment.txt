@@ -1,4 +1,0 @@
-{
-  "implicit": 12000,
-  "pageLoad": 12000
-}
