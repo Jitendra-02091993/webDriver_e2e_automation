@@ -1,12 +1,14 @@
 import { Given, When, Then } from "@wdio/cucumber-framework";
 import * as chai from "chai";
 
+
 Given(/^User open a Google page$/, async function () {
     console.log("before opening the browser");
     await browser.maximizeWindow();
     await browser.url("https://www.google.com");
     await browser.pause(1000);
     console.log("validated");
+    console.log(`BrowserObj=====> ${JSON.stringify(browser)}`);
 })
 
 When(/^User search with (.*)$/, async function (searchItem) {
@@ -14,6 +16,7 @@ When(/^User search with (.*)$/, async function (searchItem) {
     let ele = await $(`[name = q]`)
     await ele.setValue(searchItem)
     await browser.keys("Enter")
+    console.log(`ele Obj =====> ${JSON.stringify(ele)}`);
 })
 
 Then(/^click on the first search result$/, async function () {

@@ -1,4 +1,4 @@
-import { Given, When, Then, And } from "@wdio/cucumber-framework";
+import { Given, When, Then } from "@wdio/cucumber-framework";
 import * as chai from "chai";
 
 // Given(/^User open a herokuapp webPage (.*)$/, async function (url) {
